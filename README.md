@@ -16,3 +16,17 @@ Example:
     |||
     Your turn!
 
+## Stage 2/5:New rules:
+Expanding the previous stage by getting a few detailed needed for the game initialization.
+
+Run [CountedPencils.java](src/main/java/lastpencil/CountedPencils.java)
+
+Example
+
+    How many pencils would you like to use:
+    > 20
+    Who will be the first (John, Jack):
+    > Jack
+    ||||||||||||||||||||
+    Jack is going first!
+
