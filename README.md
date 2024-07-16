@@ -32,6 +32,7 @@ Example
 
 ## Stage 3/5: Working on the gameplay
 Let's change the rules of game. Players take turns taking `X` pencils until none of them remain.
+
 Run [PencilGame.java](src/main/java/lastpencil/PencilGame.java)
 
 Example 1 
