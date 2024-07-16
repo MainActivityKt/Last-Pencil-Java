@@ -30,3 +30,35 @@ Example
     ||||||||||||||||||||
     Jack is going first!
 
+## Stage 3/5: Working on the gameplay
+Let's change the rules of game. Players take turns taking `X` pencils until none of them remain.
+Run [PencilGame.java](src/main/java/lastpencil/PencilGame.java)
+
+Example 1 
+
+    How many pencils would you like to use:
+    > 5
+    Who will be the first (John, Jack):
+    > John
+    |||||
+    John's turn:
+    > 2
+    |||
+    Jack's turn:
+    > 1
+    ||
+    John's turn:
+    > 2
+
+Example 2:
+
+    How many pencils would you like to use:
+    > 15
+    Who will be the first (John, Jack):
+    > John
+    |||||||||||||||
+    John's turn:
+    > 8
+    |||||||
+    Jack's turn:
+    > 7

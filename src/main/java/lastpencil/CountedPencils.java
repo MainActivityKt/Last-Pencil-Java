@@ -1,10 +1,9 @@
 package lastpencil;
 
+import utils.Utils.*;
 import java.util.Scanner;
 
-enum Player {
-    JOHN, JACK
-}
+
 
 public class CountedPencils {
     int num;
@@ -32,11 +31,10 @@ public class CountedPencils {
         System.out.println((player == Player.JACK ? "Jack" : "John") + " is going first!");
     }
 
-}
-
-class Main {
     public static void main(String[] args) {
         CountedPencils pencils = new CountedPencils();
         pencils.start();
     }
 }
+
+
