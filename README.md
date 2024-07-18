@@ -1,6 +1,6 @@
 # Last Pencil
 
-A simple but engaging game in Java.
+A simple but engaging pencil game in Java.
 
 ## Stage 1/5:Empty the pencil case
 In this stage, the program prints two lines: one line with several vertical bar symbols representing pencils 
