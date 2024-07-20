@@ -63,3 +63,89 @@ Example 2:
     |||||||
     Jack's turn:
     > 7
+
+## Stage 4/5:
+
+In this stage, a new level of control over the game has been added.
+The program checks the input. If it is incorrect, the reason is printed. 
+
+Also, the allowed amount of pencils which can be taken is limited;
+Let's say that players can remove no more than 3 pencils at a time.
+
+Run [FairPencilGame.java](src/main/java/lastpencil/FairPencilGame.java)
+
+**Example 1**: the initial number of pencils is not numeric
+
+    How many pencils would you like to use:
+    > a
+    The number of pencils should be numeric
+    > 5
+    Who will be the first (John, Jack):
+    >
+
+**Example 2**: the initial number of pencils equals 0
+
+    How many pencils would you like to use:
+    > 0
+    The number of pencils should be positive
+    > 20
+    Who will be the first (John, Jack):
+    >
+
+**Example 3**: the chosen first player is not in the list
+
+    How many pencils would you like to use:
+    > 5
+    Who will be the first (John, Jack):
+    > Fatma
+    Choose between 'John' and 'Jack'
+    > John
+    |||||
+    John's turn!
+    >
+
+**Example 4**: one of the players has taken the number of pencils that differs from 1, 2, or 3
+
+    How many pencils would you like to use:
+    > 5
+    Who will be the first (John, Jack):
+    > John
+    |||||
+    John's turn!
+    > 4
+    Possible values: '1', '2' or '3'
+    > 1
+    ||||
+    Jack's turn!
+    >
+
+**Example 5**: the chosen number of pencils is not numeric
+
+    How many pencils would you like to use:
+    > 5
+    Who will be the first (John, Jack):
+    > John
+    |||||
+    John's turn!
+    > a
+    Possible values: '1', '2' or '3'
+    > 1
+    ||||
+    Jack's turn!
+    >
+
+**Example 6**: John is the winner of the game
+
+    How many pencils would you like to use:
+    > 5
+    Who will be the first (John, Jack):
+    > John
+    |||||
+    John's turn!
+    > 3
+    ||
+    Jack's turn!
+    > 3
+    Too many pencils were taken
+    > 2
+    John won!

@@ -3,8 +3,6 @@ package lastpencil;
 import utils.Utils.*;
 import java.util.Scanner;
 
-
-
 public class CountedPencils {
     int num;
     Scanner sc = new Scanner(System.in);
@@ -36,5 +34,3 @@ public class CountedPencils {
         pencils.start();
     }
 }
-
-
