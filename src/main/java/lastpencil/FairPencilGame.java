@@ -1,42 +1,21 @@
 package lastpencil;
 
+import utils.Utils;
 import utils.Utils.Player;
 import utils.Utils.Messages;
 
 import java.util.Scanner;
 
-import static utils.Utils.changePlayer;
-import static utils.Utils.isValidPlayerName;
+import static utils.Utils.*;
 
 class FairPencilGame {
     int numOfPencil;
     Player player;
     Scanner sc = new Scanner(System.in);
 
-    void getNumberOfPencils() {
-        System.out.println(Messages.GET_PENCILS_AMOUNT);
-        int input = Integer.MIN_VALUE;
-        while (input <= 0) {
-            try {
-                input = Integer.parseInt(sc.nextLine());
-            } catch (NumberFormatException c) {
-                input = Integer.MIN_VALUE;
-            }
-            if (input <= 0) {
-                System.out.println(input == 0 ? Messages.NUMBER_OF_PENCILS_ZERO : Messages.NON_NUMERIC_PENCILS);
-            }
-        }
-        numOfPencil = input;
-    }
-
-    void getFirstPlayer() {
-        System.out.println(Messages.FIRST_PLAYER_MESSAGE);
-        String name = sc.next();
-        while (!isValidPlayerName(name)) {
-            System.out.println(Messages.PLAYER_NAME_NOT_FOUND);
-            name = sc.next();
-        }
-        player = name.equalsIgnoreCase(Player.JACK.toString()) ? Player.JACK : Player.JOHN;
+    void initialize() {
+        numOfPencil = getNumberOfPencils(sc);
+        player = getFirstPlayer(sc);
     }
 
     void startGame() {
@@ -83,8 +62,7 @@ class FairPencilGame {
 
     public static void main(String[] args) {
         FairPencilGame game = new FairPencilGame();
-        game.getNumberOfPencils();
-        game.getFirstPlayer();
+        game.initialize();
         game.startGame();
     }
 }
