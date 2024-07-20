@@ -1,11 +1,8 @@
 package lastpencil;
 
-import utils.Utils;
 import utils.Utils.Player;
 import utils.Utils.Messages;
-
 import java.util.Scanner;
-
 import static utils.Utils.*;
 
 class FairPencilGame {
