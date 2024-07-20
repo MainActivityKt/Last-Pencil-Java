@@ -58,4 +58,27 @@ public class Utils {
         }
         return name.equalsIgnoreCase(Player.JACK.toString()) ? Player.JACK : Player.JOHN;
     }
+
+    public static void printAvailablePencils(int availablePencils) {
+        System.out.println("|".repeat(availablePencils));
+    }
+
+    public static boolean inputPencilsIsValid(String input, int availablePencils) {
+        int pencils;
+        try {
+            pencils = Integer.parseInt(input);
+            if (pencils < 1 || pencils > 3) {
+                System.out.println(Messages.UNAVAILABLE_PENCIL_AMOUNT);
+                return false;
+            }
+            if (pencils > availablePencils) {
+                System.out.println(Messages.MORE_PENCILS_THAN_AVAILABLE);
+                return false;
+            }
+        } catch (NumberFormatException c) {
+            System.out.println(Messages.UNAVAILABLE_PENCIL_AMOUNT);
+            return false;
+        }
+        return true;
+    }
 }
