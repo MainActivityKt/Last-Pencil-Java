@@ -64,7 +64,7 @@ Example 2:
     Jack's turn:
     > 7
 
-## Stage 4/5:
+## Stage 4/5:Fair play
 
 In this stage, a new level of control over the game has been added.
 The program checks the input. If it is incorrect, the reason is printed. 
@@ -159,7 +159,7 @@ and leave the other player with only one. The other player has nothing left
 but to take the last pencil and lose the game.
 
 
-The same thing happens when there are 6``, 7``, or `8` pencils left on the table.
+The same thing happens when there are `6`, 7``, or `8` pencils left on the table.
 It will eventually repeat all over again.
 
 
