@@ -74,25 +74,7 @@ Let's say that players can remove no more than 3 pencils at a time.
 
 Run [FairPencilGame.java](src/main/java/lastpencil/FairPencilGame.java)
 
-**Example 1**: the initial number of pencils is not numeric
-
-    How many pencils would you like to use:
-    > a
-    The number of pencils should be numeric
-    > 5
-    Who will be the first (John, Jack):
-    >
-
-**Example 2**: the initial number of pencils equals 0
-
-    How many pencils would you like to use:
-    > 0
-    The number of pencils should be positive
-    > 20
-    Who will be the first (John, Jack):
-    >
-
-**Example 3**: the chosen first player is not in the list
+**Example 1**: the chosen first player is not in the list
 
     How many pencils would you like to use:
     > 5
@@ -104,37 +86,7 @@ Run [FairPencilGame.java](src/main/java/lastpencil/FairPencilGame.java)
     John's turn!
     >
 
-**Example 4**: one of the players has taken the number of pencils that differs from 1, 2, or 3
-
-    How many pencils would you like to use:
-    > 5
-    Who will be the first (John, Jack):
-    > John
-    |||||
-    John's turn!
-    > 4
-    Possible values: '1', '2' or '3'
-    > 1
-    ||||
-    Jack's turn!
-    >
-
-**Example 5**: the chosen number of pencils is not numeric
-
-    How many pencils would you like to use:
-    > 5
-    Who will be the first (John, Jack):
-    > John
-    |||||
-    John's turn!
-    > a
-    Possible values: '1', '2' or '3'
-    > 1
-    ||||
-    Jack's turn!
-    >
-
-**Example 6**: John is the winner of the game
+**Example 2**: John is the winner of the game
 
     How many pencils would you like to use:
     > 5
