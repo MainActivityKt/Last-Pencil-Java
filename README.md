@@ -149,3 +149,74 @@ Run [FairPencilGame.java](src/main/java/lastpencil/FairPencilGame.java)
     Too many pencils were taken
     > 2
     John won!
+
+## Stage 5/5:The right strategy
+
+After playing a couple of games, both
+players found out that if there are `2`, `3`, or `4` pencils left on the table, the current player
+automatically wins. It happens because a player can take `1`, `2`, or `3` pencils 
+and leave the other player with only one. The other player has nothing left 
+but to take the last pencil and lose the game.
+
+
+The same thing happens when there are 6``, 7``, or `8` pencils left on the table.
+It will eventually repeat all over again.
+
+
+So, if the player chooses Jack as the first player, after that input, the bot's move should be printed.
+
+### In this final stage, 
+the program is expanded. The solution for last stage, can be
+executed for any initial number of pencils. The second player (Jack), is the bot this time.
+
+For each iteration, the program checks whose turn is
+now. If it is the bot, instead of requiring input from the second player, one line
+that contains the bot's move (1, 2 or 3) that follows the winning strategy, is printed.
+
+Run [StablePencilGame.java](src/main/java/lastpencil/SimplePencil.java)
+
+Example 1:
+
+    How many pencils would you like to use:
+    > 10
+    Who will be the first (John, Jack):
+    > Jack
+    ||||||||||
+    Jack's turn:
+    1
+    |||||||||
+    John's turn!
+    > 2
+    |||||||
+    Jack's turn:
+    2
+    |||||
+    John's turn!
+    > 1
+    ||||
+    Jack's turn:
+    3
+    |
+    John's turn!
+    > 1
+    Jack won!
+
+Example 2:
+
+    How many pencils would you like to use:
+    > 6
+    Who will be the first (John, Jack):
+    > John
+    ||||||
+    John's turn!
+    > 1
+    |||||
+    Jack's turn:
+    2
+    |||
+    John's turn!
+    > 2
+    |
+    Jack's turn:
+    1
+    John won!
