@@ -12,6 +12,12 @@ public class StablePencilGame {
     int numOfPencil;
     Random random;
 
+    public static void main(String[] args) {
+        StablePencilGame game =  new StablePencilGame();
+        game.initialize();
+        game.startGame();
+    }
+
     void initialize() {
         sc = new Scanner(System.in);
         numOfPencil = getNumberOfPencils(sc);
@@ -23,7 +29,7 @@ public class StablePencilGame {
         while (numOfPencil != 0) {
             printAvailablePencils(numOfPencil);
             if (player == Player.JACK) {
-                playBot(); //TODO
+                playBot();
             } else {
                 playPlayer();
             }
@@ -47,7 +53,6 @@ public class StablePencilGame {
 
     boolean isWinningPosition() {
         return numOfPencil != 1 && numOfPencil % 4 != 1;
-
     }
 
     void playPlayer() {
@@ -58,11 +63,5 @@ public class StablePencilGame {
         }
         numOfPencil -= Integer.parseInt(input);
         player = changePlayer(player);
-    }
-
-    public static void main(String[] args) {
-        StablePencilGame game =  new StablePencilGame();
-        game.initialize();
-        game.startGame();
     }
 }

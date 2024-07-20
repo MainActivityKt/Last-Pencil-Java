@@ -10,6 +10,11 @@ public class PencilGame {
     Scanner sc = new Scanner(System.in);
     Player currentPlayer;
 
+    public static void main(String[] args) {
+        PencilGame game = new PencilGame();
+        game.start();
+    }
+
     int getNumberOfPencils() {
         System.out.println("How many pencils would you like to use:");
         return sc.nextInt();
@@ -41,10 +46,5 @@ public class PencilGame {
             numOfPencils -= getNextPlayersTurn();
             changePlayer();
         }
-    }
-
-    public static void main(String[] args) {
-        PencilGame game = new PencilGame();
-        game.start();
     }
 }

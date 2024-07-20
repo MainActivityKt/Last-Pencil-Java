@@ -9,6 +9,12 @@ class FairPencilGame {
     Player player;
     Scanner sc = new Scanner(System.in);
 
+    public static void main(String[] args) {
+        FairPencilGame game = new FairPencilGame();
+        game.initialize();
+        game.startGame();
+    }
+
     void initialize() {
         numOfPencil = getNumberOfPencils(sc);
         player = getFirstPlayer(sc);
@@ -29,13 +35,5 @@ class FairPencilGame {
         }
         numOfPencil -= Integer.parseInt(input);
         player = changePlayer(player);
-    }
-
-
-
-    public static void main(String[] args) {
-        FairPencilGame game = new FairPencilGame();
-        game.initialize();
-        game.startGame();
     }
 }
